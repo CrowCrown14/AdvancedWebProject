@@ -6,6 +6,13 @@
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 
+fetch('http://localhost:3000/articles')
+    .then(res => res.json())
+    .then((out) => {
+        console.log('Output: ', out);
+}).catch(err => console.error(err));
+
+
 export default {
   name: 'App',
   components: {
