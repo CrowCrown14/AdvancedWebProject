@@ -25,6 +25,11 @@ CREATE TABLE IF NOT EXISTS public.users
     id integer NOT NULL,
     username text,
     password text,
+	addressNumber text,
+	street text,
+	city text,
+	postalCode text,
+	country text,
     administrator boolean,
     PRIMARY KEY (id)
 );
