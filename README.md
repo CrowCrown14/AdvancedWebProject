@@ -7,21 +7,16 @@ First, you need to clone project
 git clone https://github.com/CrowCrown14/AdvancedWebProject.git
 ```
 
-## Server Part
+## Project
 
-Server part with **Express.js**
+The project is composed of a FrontEnd and an BackEnd.    
+ - Server part (BackEnd) is coded with **Express.js**.  
+ - Client part (FrontEnd) is coded with **Vue.js**.  
 
-To run the server part :  
+## Run project  
+
+To run project, you need to follow instructions below :  
 ```
-cd Server  
 npm install  
-nodemon server  
-```
-## Client Part
-
-Client part in **Vue.js**  
-```
-cd Client
-npm install
-npm run serve
+npm run serve  
 ```

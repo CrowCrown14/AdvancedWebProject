@@ -11,3 +11,5 @@ class Plat {
 
     
 }
+
+module.exports =  { Plat };
