@@ -10,7 +10,7 @@ git clone https://github.com/CrowCrown14/AdvancedWebProject.git
 ## Project
 
 The project is composed of a FrontEnd and an BackEnd.    
- - Server part (BackEnd) is coded with **Express.js**.  
+ - Server part (BackEnd) is coded with **Node.js**.  
  - Client part (FrontEnd) is coded with **Vue.js**.  
 
 ## Run project  
