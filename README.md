@@ -16,6 +16,17 @@ The project is composed of a FrontEnd and an BackEnd.
 ## Run project  
 
 To run project, you need to follow instructions below :  
+Install PostgreSQL  
+On PostgreSQL :  
+ - Create a database named "AdvanceWebBDD"  
+ - Insert script plat.sql on your databases.  
+
+Default account for databases  
+ - host : postgres  
+ - password : motdepasse  
+
+If you have not the same id or password, open [api.js](.\Server\API\api.js) and change host and password in **const client**  
+Open you shell and write to launch server :  
 ```
 npm install  
 npm run serve  

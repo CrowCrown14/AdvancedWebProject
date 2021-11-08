@@ -17,7 +17,7 @@
                     </div>
                     <br/>
                     <div>
-                        <p>Total price : {{ plat.price /100 * this.qte }}€</p>
+                        <p>Total price : <strong>{{ plat.price /100 * this.qte }}€</strong></p>
                         <button v-on:click="addPanier()">Add to shopping cart</button>
                     </div>
                     
