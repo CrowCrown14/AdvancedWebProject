@@ -32,7 +32,6 @@ app.use(async (req, res, next) => {
       for (var i = 0 ; i < requete.rowCount; i++)
       {
           req.session.plats.push(new Plat(requete.rows[i].id,requete.rows[i].name,requete.rows[i].category,requete.rows[i].description,requete.rows[i].image,requete.rows[i].price));
-          console.log(req.session.plats);
       }
   }
   next();

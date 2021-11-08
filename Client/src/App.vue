@@ -1,8 +1,12 @@
 <template>
   <div id="nav">
+    <div  v-if="isConnected">
+      <p>Bienvenue {{ currentUser }} <button class="logoutButton" v-on:click="logout">Logout</button></p> 
+    </div>
     <router-link to="/">Home</router-link> |
     <router-link to="/menu">Menu</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link v-if="!isConnected" to="/menu">Login</router-link>
+    
   </div>
   <router-view/>
 </template>
@@ -12,9 +16,17 @@
 
     name : "App",
 
+    methods: {
+      logout : function() {
+        this.isConnected = false;
+      }
+    },
+
     data() { 
         return {
-            plats : []
+            plats : [],
+            isConnected : true,
+            currentUser : "Nom",
         }
     },
   }
@@ -47,5 +59,9 @@
   background-color: #fffeefe8 ;
 }
 
+.logoutButton {
+  background-color: #555555 ;
+  color: #fffeefe8;
+}
 
 </style>

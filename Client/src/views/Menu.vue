@@ -2,17 +2,9 @@
 <div class="block">
     <div>
         <div v-for="element in this.menu.articles" :key="element.id">
-            <div class="miniBlock">
-                <div class="image">
-                    <img :src="getSrc(element.image)" v-bind:alt="pic">
-                </div>
-                <div class="text">
-                    <p> id : {{ element.id }}</p>
-                    <p> {{ element.category }} : {{ element.description }} </p>
-                    <p> Prix : {{element.price / 100}}€ </p>
-                </div>
-                
-            </div>
+            <Plat
+                :plat="element"
+            />
         </div>
     </div>
 
@@ -21,8 +13,14 @@
 
 <script>
 
+import Plat from "./Plat.vue";
+
 export default {
+    
     name: 'Menu',
+    components: {
+        Plat,
+    },
 
     mounted() {
         fetch('http://localhost:3000/articles')
